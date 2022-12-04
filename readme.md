@@ -1,7 +1,6 @@
 # Project 2
 
-An app to generate a random excuse.
-Bonus functions to be added include the ability to generate an excuse for specific situations: excuses to give your children and excuses to give when your code doesn't work.
+App Description
 
 ### Link to Planning Trello Board
 [Trello Board](https://trello.com/invite/b/taFMH5oe/ATTI1e994c49c1b88f52a3e1a93a561592e5DC05E651/projcet-2)
@@ -21,10 +20,10 @@ Bonus functions to be added include the ability to generate an excuse for specif
 ### Wireframes
 
 ##### Desktop
-![desktop home screen](https://i.imgur.com/RguxAKm.png)
+![desktop home screen]()
 
 ##### Mobile
-![mobile home screen](https://i.imgur.com/9PT4RFS.png)
+![mobile home screen]()
 
 
 ### Daily Plan
@@ -41,12 +40,7 @@ Bonus functions to be added include the ability to generate an excuse for specif
 
 
 ### Link to Project
-[My Project Live Page](https://project1-iota-opal.vercel.app/)
+[My Project Live Page](Link)
 
 
 ### Future Goals
-- Make more responsive:
-    - desktop resizing
-    - mobile version
-- Add a button to generate random excuse instead of having it as a select option
-- More CSS styling
