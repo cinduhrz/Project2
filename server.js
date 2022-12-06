@@ -37,7 +37,7 @@ app.use(methodOverride("_method"))
 
 // Routers and Routes
 app.get('/', (req, res) => {
-    res.send('pages/index.ejs')
+    res.render('pages/index.ejs')
 })
 
 
