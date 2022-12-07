@@ -6,11 +6,6 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.notes {
-    display: flex;
-    height: 100%;
-}
-
 nav {
     display: flex;
     justify-content: center;
@@ -68,6 +63,9 @@ nav {
     font-size: 1.2rem;
 }
 
+button {
+    cursor: pointer;
+}
 
 .notes__sidebar {
     border-right: 3px solid pink;
