@@ -35,7 +35,7 @@ theraNotes is a platform for those in therapy to keep track of their notes for e
 
 ![mobile home/index route screen for therapist](https://i.imgur.com/u2VbRYC.png)
 
-![mobile view session screen for therapist](https://i.imgur.com/AN9f65O.png)
+![mobile view session screen for therapist](https://i.imgur.com/tOyqFvm.png)
 
 
 <!-- <img src="https://i.imgur.com/FduJeBF.png" alt="mobile home/index route screen for user" height="400">
@@ -44,7 +44,7 @@ theraNotes is a platform for those in therapy to keep track of their notes for e
 
 <img src="https://i.imgur.com/u2VbRYC.png" alt="mobile home/index route screen for therapist" height="400">
 
-<img src="https://i.imgur.com/AN9f65O.png" alt="mobile view session screen for therapist" height="400"> -->
+<img src="https://i.imgur.com/tOyqFvm.png" alt="mobile view session screen for therapist" height="400"> -->
 
 ### ERD
 ![ERD Diagram showing relationship between session notes, user, and therapist models](https://i.imgur.com/q6ei7US.png)
