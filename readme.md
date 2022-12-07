@@ -35,7 +35,7 @@ theraNotes is a platform for those in therapy to keep track of their notes for e
 
 ![mobile home/index route screen for therapist](https://i.imgur.com/u2VbRYC.png)
 
-<img src="https://i.imgur.com/tOyqFvm.png" alt="mobile view session screen for therapist" height="650"> -->
+<img src="https://i.imgur.com/tOyqFvm.png" alt="mobile view session screen for therapist" height="650">
 
 
 <!-- <img src="https://i.imgur.com/FduJeBF.png" alt="mobile home/index route screen for user" height="400">
