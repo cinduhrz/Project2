@@ -47,7 +47,7 @@ theraNotes is a platform for those in therapy to keep track of their notes for e
 <img src="https://i.imgur.com/tOyqFvm.png" alt="mobile view session screen for therapist" height="400"> -->
 
 ### ERD
-![ERD Diagram showing relationship between session notes, user, and therapist models](https://i.imgur.com/q6ei7US.png)
+![ERD Diagram showing relationship between session notes, user, and therapist models](https://i.imgur.com/r9e57M6.png)
 
 
 ### Daily Plan
