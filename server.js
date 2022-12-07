@@ -5,25 +5,13 @@ require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
 const methodOverride = require('method-override')
-const mongoose = require('mongoose')
+const mongoose = require('./models/connection') // connect to db
 
 
 ///////////////////////////////////
 // Create Express App Object
 ///////////////////////////////////
 const app = express()
-
-
-///////////////////////////////////
-// Connect to Mongo
-///////////////////////////////////
-mongoose.connect(process.env.DATABASE_URL)
-
-// Mongoose connection events
-mongoose.connection
-.on("open", () => console.log("Connected to Mongo"))
-.on("close", () => console.log("Disconnected From Mongo"))
-.on("error", (error) => console.log(error))
 
 
 ///////////////////////////////////
