@@ -10,13 +10,14 @@ const { Schema, model } = mongoose
 
 // make sessionNote Schema
 const sessionNoteSchema = new Schema({
+    date: String,
     preSessionNote: String,
     postSessionNote: String,
     username: String
 })
 
 // make sessionNote model
-const sessionNote = model("sessionNote", sessionNoteSchema)
+const SessionNote = model("sessionNote", sessionNoteSchema)
 
 // export sessionNote model to user in routers
-module.exports = sessionNote
+module.exports = SessionNote
