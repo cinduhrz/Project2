@@ -2,7 +2,8 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #ffd9d9;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
 }
 
 .notes {
@@ -10,11 +11,62 @@ body {
     height: 100%;
 }
 
-
-.notes * {
-    font-family: sans-serif;
+nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.15rem solid black;
 }
 
+.big-title {
+    padding: 0px;
+    margin: 2rem;
+    font-size: 4rem;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+.client-top-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-top-display-welcome-back-text {
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    margin-top: 3rem;
+}
+
+.client-top-display-start-planning-text {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.client-top-display-big-button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    margin: 3rem 1rem 3rem 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: rgb(191, 191, 191);
+    border: none;
+    transition: 0.2s;
+}
+
+.client-top-display-big-button:hover {
+    color: white;
+    background-color: rgb(241, 180, 190);
+}
+
+.client-all-sessions-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-sessions-subtitle {
+    font-size: 1.2rem;
+}
 
 
 .notes__sidebar {

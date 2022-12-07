@@ -37,7 +37,11 @@ app.use(methodOverride("_method"))
 
 // Routers and Routes
 app.get('/', (req, res) => {
-    res.send(`Server is listening on port ${PORT}`)
+    res.redirect('/home')
+})
+
+app.get('/home', (req, res) => {
+    res.render('client/index.ejs')
 })
 
 
