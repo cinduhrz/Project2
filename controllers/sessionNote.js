@@ -74,7 +74,11 @@ router.get('/notes/:id', async (req, res) => {
     // res.send(req.params.id)
 
     const note = await SessionNote.findById(req.params.id)
-    res.render('client/show.ejs', { note })
+
+    // convert date to shortened ver
+    const date = note.date.toDateString()
+
+    res.render('client/show.ejs', { note, date })
 
 })
 

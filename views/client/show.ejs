@@ -1,1 +1,35 @@
-<%= note.date %>
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs', {title: "theraNotes"}) %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+        <div class="show-session-top-display">
+            <p class="show-session-your-session-on-text">Your session on <%= date %></p>
+        </div>
+
+        <div class="show-session-notes-display">
+            <div class="show-pre-session-notes-container">
+                <p class="show-session-pre-notes-subtitle">pre-session notes</p>
+                <div class="show-pre-session-notes-text">
+                    <%= note.preSessionNote %>
+                </div>
+            </div>
+
+            <div class="show-post-session-notes-container">
+                <p class="show-session-post-notes-subtitle">post-session notes</p>
+                <div class="show-post-session-notes-text">
+                    <%= note.postSessionNote %>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-sesion-buttons-area">
+            <a href="/notes/<%= note._id %>/edit"><button>edit</button></a>
+            <a href="/home"><button>back</button></a>
+        </div>
+
+    </body>
+
+</html>
