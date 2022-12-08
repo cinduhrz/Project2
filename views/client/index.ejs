@@ -3,7 +3,7 @@
     <%- include('../partials/head.ejs') %>
     <body>
         <nav>
-            <h1 class="big-title">theraNotes</h1>
+            <h1 class="big-title"><span class="thera">thera</span>Notes</h1>
             <div class="dropdown-menu"></div>
         </nav>
         <div class="client-top-display">
@@ -16,13 +16,32 @@
             
             <% for (let i=0; i<notes.length; i++) { %>
                 <div class="session-note-container">
-                    <div class="date-and-edit-button">
-                        <p><%= dates[i] %></p>
-                        <a href="/notes/<%= notes[i]._id %>/edit"><button>edit</button></a>
-                    </div>
-                    <div class="pre-and-post-note-preview">
+
+                    <div class="date-and-buttons-container">
+                        <p class="note-date"><%= dates[i] %></p>
+
+                        <div class="buttons-container">
+                            <a href="/notes/<%= notes[i]._id %>"><button class="show-button">open</button></a>
+
+                            <a href="/notes/<%= notes[i]._id %>/edit"><button class="edit-button">edit</button></a>
+
+                            <form action="/notes/<%= notes[i]._id %>?_method=DELETE" method="POST">
+                                <input class="delete-button" type="submit" value="delete">
+                            </form>
+                        </div>
 
                     </div>
+                    <div class="pre-and-post-note-preview">
+                        <div class="pre-session-preview">
+                            <p class="pre-session-preview-heading">pre-session</p>
+                            <%= notes[i].preSessionNote %>
+                        </div>
+                        <div class="post-session-preview">
+                            <p class="post-session-preview-heading">post-session</p>
+                            <%= notes[i].postSessionNote %>
+                        </div>
+                    </div>
+
                 </div>
             <% } %>
         </div>

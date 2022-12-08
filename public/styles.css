@@ -12,6 +12,10 @@ nav {
     border-bottom: 0.15rem solid black;
 }
 
+.thera {
+    color: rgb(243, 140, 157);
+}
+
 .big-title {
     padding: 0px;
     margin: 2rem;
@@ -68,7 +72,59 @@ button {
 }
 
 .session-note-container {
-    border: 1px solid black;
+    border: none;
+    width: 60%;
+    background-color: pink;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.date-and-buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-date {
+    margin: 1rem;
+}
+
+.buttons-container {
+    display: flex;
+}
+
+.buttons-container button, .delete-button {
+    margin: 0.8rem 1rem 0 1rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    transition: 0.2s;
+}
+
+.buttons-container button:hover, .delete-button:hover{
+    color: white;
+    background-color: rgb(120, 120, 120);
+}
+
+.pre-and-post-note-preview {
+    display: flex;
+    /* not sure what justify-content is doing here,
+    i'm just tryna keep each preview on its half */
+    /* justify-content: space-between;  */
+    padding: 0 1rem 1rem 1rem;
+}
+
+.pre-session-preview, .post-session-preview {
+    background-color: white;
+    border-radius: 1rem;
+    width: 50%;
+    padding: 1rem;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.pre-session-preview-heading, .post-session-preview-heading {
+    font-size: 1.1rem;
+    color: rgb(85, 85, 85);
+    margin: 0 0 0.5rem 0;
 }
 
 
