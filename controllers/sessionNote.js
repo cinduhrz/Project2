@@ -77,6 +77,10 @@ router.post('/notes', (req, res) => {
 })
 
 // Edit
+router.get('/notes/:id/edit', (req, res) => {
+    res.send(`You want to edit the note with an id of: ${req.params.id}`)
+})
+
 // Show
 router.get('/notes/:id', async (req, res) => {
     // test route
