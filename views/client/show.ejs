@@ -8,7 +8,7 @@
         <div class="show-session-top-display">
             <p class="show-session-your-session-on-text">Your session on <%= date %></p>
             
-            <form action="/notes/<%= note._id %>?method=DELETE" method="POST" class="show-session-delete-button">
+            <form action="/notes/<%= note._id %>?_method=DELETE" method="POST" class="show-session-delete-button">
                 <input type="submit" value="delete session">
             </form>
 

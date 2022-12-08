@@ -50,6 +50,15 @@ router.get('/notes/new', (req, res) => {
 })
 
 // Delete
+router.delete('/notes/:id', (req, res) => {
+    SessionNote.findByIdAndDelete(req.params.id, (err, deletedNote) => {
+        console.log(err, deletedNote)
+
+        // redirect user back to index
+        res.redirect('/home')
+    })
+})
+
 // Update
 // Create
 router.post('/notes', (req, res) => {
