@@ -6,6 +6,7 @@ const express = require('express')
 const morgan = require('morgan')
 const methodOverride = require('method-override')
 const mongoose = require('./models/connection') // connect to db
+const SessionNoteRouter = require('./controllers/sessionNote') // import sessionNote router
 
 
 ///////////////////////////////////
@@ -21,16 +22,8 @@ app.use(morgan("dev"))
 app.use("/static", express.static("public"))
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride("_method"))
-
-
-// Routers and Routes
-app.get('/', (req, res) => {
-    res.redirect('/home')
-})
-
-app.get('/home', (req, res) => {
-    res.render('client/index.ejs')
-})
+// !! put user router here (has to go BEFORE other routers bc other routers will redirect to user router's login route when ppl try to access their routes without authorization)
+app.use(SessionNoteRouter)
 
 
 ///////////////////////////////////

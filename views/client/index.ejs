@@ -13,6 +13,18 @@
         </div>
         <div class="client-all-sessions-display">
             <p class="all-sessions-subtitle">All Sessions</p>
+            
+            <% for (let i=0; i<notes.length; i++) { %>
+                <div class="session-note-container">
+                    <div class="date-and-edit-button">
+                        <p><%= dates[i] %></p>
+                        <a href="/notes/<%= notes[i]._id %>/edit"><button>edit</button></a>
+                    </div>
+                    <div class="pre-and-post-note-preview">
+
+                    </div>
+                </div>
+            <% } %>
         </div>
     </body>
 </html>

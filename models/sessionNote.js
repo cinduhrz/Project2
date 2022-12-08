@@ -10,7 +10,7 @@ const { Schema, model } = mongoose
 
 // make sessionNote Schema
 const sessionNoteSchema = new Schema({
-    date: String,
+    date: {type: Date},
     preSessionNote: String,
     postSessionNote: String,
     username: String
