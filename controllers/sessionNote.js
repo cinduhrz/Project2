@@ -69,6 +69,14 @@ router.post('/notes', (req, res) => {
 
 // Edit
 // Show
+router.get('/notes/:id', async (req, res) => {
+    // test route
+    // res.send(req.params.id)
+
+    const note = await SessionNote.findById(req.params.id)
+    res.render('client/show.ejs', { note })
+
+})
 
 
 /////////////////////////////////////////////
