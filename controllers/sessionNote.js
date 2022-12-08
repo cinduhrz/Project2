@@ -53,7 +53,18 @@ router.get('/notes/new', (req, res) => {
 // Update
 // Create
 router.post('/notes', (req, res) => {
-    
+    // test route
+    // res.send(req.body)
+
+    // set username = to user making the note (do this after setting up auth)
+    // req.body.username = req.session.username
+
+    SessionNote.create(req.body, (err, createdNote) => {
+        console.log(createdNote)
+
+        // redirect user back to home notes page
+        res.redirect('/home')
+    })
 })
 
 // Edit
