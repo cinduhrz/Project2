@@ -45,6 +45,10 @@ router.get('/home', async (req, res) => {
 
 
 // New
+router.get('/notes/new', (req, res) => {
+    res.render('client/new.ejs')
+})
+
 // Delete
 // Update
 // Create

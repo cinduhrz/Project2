@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs', {title: "theraNotes | Add a New Session"}) %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+        <div class="new-session-top-display">
+            <p class="new-session-start-planning-text">Start planning for your next session below.</p>
+        </div>
+
+
+        <form class="new-session-form">
+            <div class="new-session-date-input">
+                Date of Session: <input type="date" name="date" min="2022-01-01" max="2050-01-01">
+            </div>
+
+            <div class="new-session-pre-and-post-notes-container">
+                <div class="new-session-pre-session-area">
+                    <p class="new-session-pre-session-subtitle">pre-session notes</p>
+                    <input class="new-session-note-input" type="textarea">
+                </div>
+                <div class="new-session-post-session-area">
+                    <p class="new-session-post-session-subtitle">post-session notes</p>
+                    <input class="new-session-note-input"  type="textarea">
+                </div>
+            </div>
+
+        </form>
+
+        <div class="new-session-back-button-area">
+            <a href="/home"><button>back</button></a>
+        </div>
+
+    </body>
+
+</html>

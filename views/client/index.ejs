@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head.ejs') %>
+    <%- include('../partials/head.ejs', {title: "theraNotes"}) %>
+
     <body>
-        <nav>
-            <h1 class="big-title"><span class="thera">thera</span>Notes</h1>
-            <div class="dropdown-menu"></div>
-        </nav>
+        <%- include('../partials/header.ejs') %>
+
         <div class="client-top-display">
             <h4 class="client-top-display-welcome-back-text">Welcome back, user.</h4>
             <p class="client-top-display-start-planning-text">Start planning for your next session below.</p>

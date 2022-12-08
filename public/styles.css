@@ -133,14 +133,43 @@ button {
     margin: 0 0 0.5rem 0;
 }
 
-
-.notes__sidebar {
-    border-right: 3px solid pink;
-    flex-shrink: 0;
-    overflow-y: auto;
-    padding: 1em;
-    width: 300px;
+.new-session-top-display {
+    text-align: center;
 }
+
+.new-session-start-planning-text {
+    font-size: 1.8rem;
+}
+
+.new-session-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-session-pre-and-post-notes-container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+    width: 80%;
+}
+
+.new-session-pre-session-area, .new-session-post-session-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-session-note-input {
+    width: 400%;
+    height: 500px;
+}
+
+.new-session-back-button-area {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* 
 
