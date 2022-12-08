@@ -60,6 +60,23 @@ router.delete('/notes/:id', (req, res) => {
 })
 
 // Update
+router.put('/notes/:id', async (req, res) => {
+
+    // if date input is empty (date was not changed), add original date back into date property
+    if (!req.body.date) {
+        const note = await SessionNote.findById(req.params.id)
+        req.body.date = note.date
+    }
+
+    console.log(req.body)
+
+    SessionNote.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedNote) => {
+        // function alr updates note, not just redirect user back
+        res.redirect(`/notes/${req.params.id}`)
+    })
+
+})
+
 // Create
 router.post('/notes', (req, res) => {
     // test route
@@ -77,16 +94,28 @@ router.post('/notes', (req, res) => {
 })
 
 // Edit
-router.get('/notes/:id/edit', (req, res) => {
-    res.send(`You want to edit the note with an id of: ${req.params.id}`)
+router.get('/notes/:id/edit', async (req, res) => {
+    // test route
+    // res.send(`You want to edit the note with an id of: ${req.params.id}`)
+
+    const note = await SessionNote.findById(req.params.id)
+
+    // convert date to shortened ver
+    const date = note.date.toDateString()
+
+    res.render('client/edit.ejs', { note, date })
+
 })
 
 // Show
 router.get('/notes/:id', async (req, res) => {
     // test route
     // res.send(req.params.id)
+    console.log(req.params.id)
 
     const note = await SessionNote.findById(req.params.id)
+
+    console.log(note)
 
     // convert date to shortened ver
     const date = note.date.toDateString()
