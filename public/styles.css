@@ -18,7 +18,7 @@ nav {
 
 .big-title {
     padding: 0px;
-    margin: 2rem;
+    margin: 1.2rem;
     font-size: 4rem;
     font-family: 'Comfortaa', cursive;
     
@@ -103,6 +103,8 @@ button {
 .buttons-container button:hover, .delete-button:hover{
     color: white;
     background-color: rgb(120, 120, 120);
+    /* line below is redundant for other buttons but needed for delete button as it is an input element */
+    cursor: pointer;
 }
 
 .pre-and-post-note-preview {
@@ -119,6 +121,10 @@ button {
     width: 50%;
     padding: 1rem;
     margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.pre-session-preview {
+    margin-right: 1rem;
 }
 
 .pre-session-preview-heading, .post-session-preview-heading {
