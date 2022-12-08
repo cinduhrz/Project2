@@ -52,6 +52,10 @@ router.get('/notes/new', (req, res) => {
 // Delete
 // Update
 // Create
+router.post('/notes', (req, res) => {
+    
+})
+
 // Edit
 // Show
 

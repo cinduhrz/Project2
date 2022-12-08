@@ -160,6 +160,7 @@ button {
     align-items: center;
 }
 
+/* use css grid here for text areas? they r being weird */
 .new-session-note-input {
     width: 400%;
     height: 500px;
