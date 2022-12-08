@@ -171,6 +171,86 @@ button {
     justify-content: center;
 }
 
+.show-session-top-display {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    align-items: center;
+}
+
+.show-session-your-session-on-text {
+    margin-bottom: 1.5rem;
+}
+
+.show-session-delete-button {
+    margin-bottom: 2rem;
+}
+
+.show-session-delete-button input {
+    margin: 0rem 1rem 0 1rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.75rem;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.show-session-delete-button input:hover {
+    color: white;
+    background-color: rgb(120, 120, 120);
+}
+
+.show-session-notes-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.show-pre-session-notes-container, .show-post-session-notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 35%;
+    background-color: pink;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+.show-session-pre-notes-subtitle, .show-session-post-notes-subtitle {
+    font-size: 1.5rem;
+}
+
+.show-pre-session-notes-text, .show-post-session-notes-text {
+    /* border: 1px solid black; */
+    margin: 0 7%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+}
+
+.show-session-buttons-area {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.show-session-buttons-area button {
+    margin: 0.8rem 1rem 0 1rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.75rem;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.show-session-buttons-area button:hover {
+    color: white;
+    background-color: rgb(120, 120, 120);
+}
+
 
 /* 
 
