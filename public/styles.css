@@ -154,6 +154,7 @@ button {
     border-radius: 1rem;
     width: 50%;
     padding: 1rem;
+    padding-bottom: 0;
     margin: 0 0.5rem 0.5rem 0.5rem;
 }
 
@@ -369,6 +370,12 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
+    button, input[type="submit"] {
+        -webkit-appearance: none;
+        background-color: rgb(233, 233, 233);
+        color: black;
+    }
+
     .web-nav {
         flex-direction: column;
         align-items: center;
@@ -434,7 +441,6 @@ button {
     }
 
     .delete-button {
-        -webkit-appearance: none;
         background-color: rgb(233, 233, 233);
         color: black;
         margin-right: 0.5rem;
@@ -496,6 +502,11 @@ button {
     .pre-session-notes-subtitle, .post-session-notes-subtitle {
         font-size: 1.1rem;
         margin-bottom: 0.5rem;
+    }
+
+    .new-session-save-buttons-container {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
 }
