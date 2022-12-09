@@ -36,12 +36,18 @@ nav {
 .menu-links-container a {
     text-decoration: none;
     font-size: 1.2rem;
+    transition: 0.2s;
 }
 
 .menu-links-container a:visited {
     text-decoration: none;
     color: black;
 }
+
+.menu-links-container a:hover {
+    color: rgb(243, 140, 157);
+}
+
 
 textarea {
     font-family: 'Nunito', sans-serif;
@@ -356,4 +362,19 @@ button {
 .edit-page-save-changes-button:hover {
     color: white;
     background-color: rgb(120, 120, 120);
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        width: 100%;
+    }
+
+    .big-title {
+        padding: 0px;
+        margin: 1.2rem;
+        margin-left: 1rem;
+        font-size: 2rem;
+        font-family: 'Comfortaa', cursive;
+    }
+
 }
