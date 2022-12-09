@@ -141,29 +141,37 @@ button {
     font-size: 1.8rem;
 }
 
-.new-session-form {
+.new-session-form, .edit-session-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.new-session-pre-and-post-notes-container {
+.new-session-pre-and-post-notes-container, .edit-session-pre-and-post-notes-container {
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
     width: 80%;
+    background-color: pink;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
 }
 
-.new-session-pre-session-area, .new-session-post-session-area {
+.new-session-pre-session-area, .new-session-post-session-area, .edit-session-pre-session-area, .edit-session-post-session-area {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* use css grid here for text areas? they r being weird */
-.new-session-note-input {
+.new-session-note-input, .edit-session-note-input {
     width: 300%;
     height: 500px;
+    /* border: 1px solid black; */
+    margin: 0 7%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1.1rem;
 }
 
 .new-session-back-button-area {
@@ -216,7 +224,7 @@ button {
     padding-bottom: 2rem;
 }
 
-.show-session-pre-notes-subtitle, .show-session-post-notes-subtitle {
+.pre-session-notes-subtitle, .post-session-notes-subtitle {
     font-size: 1.5rem;
 }
 
@@ -273,13 +281,4 @@ button {
     padding: 0.75rem;
     transition: 0.2s;
     font-size: 1rem;
-}
-
-.edit-session-note-input, .new-session-note-input {
-    /* border: 1px solid black; */
-    margin: 0 7%;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 1rem;
-    font-size: 1.1rem;
 }
