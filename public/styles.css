@@ -24,6 +24,10 @@ nav {
     
 }
 
+textarea {
+    font-family: 'Nunito', sans-serif;
+}
+
 .client-top-display {
     display: flex;
     flex-direction: column;
@@ -145,6 +149,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 70%;
 }
 
 .new-session-date-input, .edit-session-date-input {
@@ -159,35 +164,64 @@ button {
     display: flex;
     justify-content: space-around;
     width: 80%;
+    height: 100%;
     background-color: pink;
     border-radius: 1rem;
     padding-bottom: 2rem;
     margin: 2%;
+    /* border: 1px solid blue; */
 }
 
 .new-session-pre-session-area, .new-session-post-session-area, .edit-session-pre-session-area, .edit-session-post-session-area {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    width: 43%;
 }
 
 /* use css grid here for text areas? they r being weird */
 .new-session-note-input, .edit-session-note-input {
+    box-sizing: border-box;
     width: 100%;
-    /* height: 500px; */
+    height: 100%;
     /* border: 1px solid black; */
-    margin: 0 7%;
+    /* margin: 0 7%; */
     padding: 1rem;
     background-color: white;
+    border: none;
     border-radius: 1rem;
     font-size: 1.1rem;
     resize: none;
 }
 
-.new-session-back-button-area {
+.new-session-save-buttons-container {
+    width: 23%;
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.new-page-button {
+    margin: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.75rem;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.new-page-button:hover {
+    color: white;
+    background-color: rgb(120, 120, 120);
+}
+
+.back-button-area {
+    /* display: flex;
+    justify-content: center; */
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
 }
 
 .show-session-top-display {
@@ -202,11 +236,11 @@ button {
 }
 
 .show-session-delete-button {
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .show-session-delete-button input {
-    margin: 0rem 1rem 0 1rem;
+    /* margin: 0rem 1rem 0 1rem; */
     border-radius: 1rem;
     border: none;
     padding: 0.75rem;
@@ -257,7 +291,7 @@ button {
 }
 
 .show-session-buttons-area button {
-    margin: 0.8rem 1rem 0 1rem;
+    margin: 0rem 1rem;
     border-radius: 1rem;
     border: none;
     padding: 0.75rem;
@@ -292,4 +326,18 @@ button {
     padding: 0.75rem;
     transition: 0.2s;
     font-size: 1rem;
+}
+
+.edit-page-save-changes-button {
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.75rem;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.edit-page-save-changes-button:hover {
+    color: white;
+    background-color: rgb(120, 120, 120);
 }

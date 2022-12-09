@@ -7,11 +7,6 @@
 
         <div class="show-session-top-display">
             <p class="show-session-your-session-on-text">Your session on <%= date %></p>
-            
-            <form action="/notes/<%= note._id %>?_method=DELETE" method="POST" class="show-session-delete-button">
-                <input type="submit" value="delete session">
-            </form>
-
         </div>
 
         <div class="show-session-notes-display">
@@ -33,7 +28,13 @@
         <div class="show-session-buttons-area">
             <a href="/notes/<%= note._id %>/edit"><button>edit</button></a>
 
-            <a href="/home"><button>back</button></a>
+            <form action="/notes/<%= note._id %>?_method=DELETE" method="POST" class="show-session-delete-button">
+                <input type="submit" value="delete session">
+            </form>
+        </div>
+
+        <div class="back-button-area">
+            <a href="/home"><button class="new-page-button">back</button></a>
         </div>
 
     </body>
