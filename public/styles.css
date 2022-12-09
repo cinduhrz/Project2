@@ -6,11 +6,15 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-nav {
+.web-nav {
     display: flex;
     justify-content: space-between;
     border-bottom: 0.15rem solid black;
 }
+
+/* .mobile-side-nav {
+    display: none;
+} */
 
 .thera {
     color: rgb(243, 140, 157);
@@ -34,6 +38,7 @@ nav {
 }
 
 .menu-links-container a {
+    color: black;
     text-decoration: none;
     font-size: 1.2rem;
     transition: 0.2s;
@@ -47,7 +52,6 @@ nav {
 .menu-links-container a:hover {
     color: rgb(243, 140, 157);
 }
-
 
 textarea {
     font-family: 'Nunito', sans-serif;
@@ -365,16 +369,100 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
-    nav {
-        width: 100%;
+    .web-nav {
+        flex-direction: column;
+        align-items: center;
+        border: none;
     }
 
     .big-title {
         padding: 0px;
         margin: 1.2rem;
         margin-left: 1rem;
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: 'Comfortaa', cursive;
+    }
+
+    .menu-links-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: pink;
+        padding: 0.5rem;
+        /* border-bottom: 0.15rem solid black; */
+    }
+
+    .menu-links-container a {
+        color: black;
+        font-size: 1.1rem;
+        margin: 0.2rem;
+    }
+
+    .client-top-display-welcome-back-text {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .client-top-display-start-planning-text {
+        font-size: 1.2rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .client-top-display-big-button {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .all-sessions-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .session-note-container {
+        width: 80%;
+    }
+
+    .note-date {
+        font-size: 80%;
+    }
+
+    .buttons-container button, .delete-button {
+        margin: 0.25rem;
+        margin-top: 0.5rem;
+        color: black;
+    }
+
+    .delete-button {
+        -webkit-appearance: none;
+        background-color: rgb(233, 233, 233);
+        color: black;
+        margin-right: 0.5rem;
+    }
+
+    .pre-and-post-note-preview {
+        height: 5rem;
+        padding: 0.5rem;
+        padding-top: 0rem;
+    }
+
+    .pre-session-preview, .post-session-preview {
+        width: 55%;
+        padding: 0.4rem 0.6rem;
+        margin: 0 0.5rem 0.5rem 0.5rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .pre-session-preview-heading, .post-session-preview-heading {
+        font-size: 0.75rem;
+        color: rgb(85, 85, 85);
+        margin: 0;
+    }
+
+    .preview-note {
+        font-size: 0.75rem;
+        margin-top: 0;
     }
 
 }
