@@ -369,6 +369,10 @@ button {
     background-color: rgb(120, 120, 120);
 }
 
+footer {
+    background-color: pink;
+}
+
 @media only screen and (max-width: 500px) {
     button, input[type="submit"] {
         -webkit-appearance: none;
