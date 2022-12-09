@@ -465,4 +465,37 @@ button {
         margin-top: 0;
     }
 
+    .new-session-start-planning-text {
+        font-size: 1.5rem;
+    }
+
+    .new-session-form, .edit-session-form {
+        height: 130%;
+    }
+
+    .new-session-date-input, .edit-session-date-input {
+        display: flex;
+        align-items: center;
+    }
+
+    .new-session-pre-and-post-notes-container, .edit-session-pre-and-post-notes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-session-pre-session-area, .new-session-post-session-area, .edit-session-pre-session-area, .edit-session-post-session-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid red; */
+        width: 80%;
+        height: 100%;
+    }
+
+    .pre-session-notes-subtitle, .post-session-notes-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
 }
