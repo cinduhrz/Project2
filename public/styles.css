@@ -236,10 +236,6 @@ button {
     margin-bottom: 1.5rem;
 }
 
-.show-session-delete-button {
-    /* margin-bottom: 2rem; */
-}
-
 .show-session-delete-button input {
     /* margin: 0rem 1rem 0 1rem; */
     border-radius: 1rem;
