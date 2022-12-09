@@ -51,14 +51,15 @@ textarea {
     margin: 3rem 1rem 3rem 1rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    background-color: rgb(191, 191, 191);
+    color: white;
+    background-color: rgb(241, 180, 190);
     border: none;
     transition: 0.2s;
 }
 
 .client-top-display-big-button:hover {
     color: white;
-    background-color: rgb(241, 180, 190);
+    background-color: rgb(224, 147, 160);
 }
 
 .client-all-sessions-display {
