@@ -154,6 +154,7 @@ button {
     background-color: pink;
     border-radius: 1rem;
     padding-bottom: 2rem;
+    margin: 2%;
 }
 
 .new-session-pre-session-area, .new-session-post-session-area, .edit-session-pre-session-area, .edit-session-post-session-area {
