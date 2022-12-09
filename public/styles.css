@@ -165,7 +165,7 @@ button {
 
 /* use css grid here for text areas? they r being weird */
 .new-session-note-input, .edit-session-note-input {
-    width: 300%;
+    width: 100%
     height: 500px;
     /* border: 1px solid black; */
     margin: 0 7%;
