@@ -147,6 +147,14 @@ button {
     align-items: center;
 }
 
+.new-session-date-input, .edit-session-date-input {
+    font-size: 1.2rem;
+}
+
+.new-session-date-input input, .edit-session-date-input input {
+    font-size: 1.1rem;
+}
+
 .new-session-pre-and-post-notes-container, .edit-session-pre-and-post-notes-container {
     display: flex;
     justify-content: space-around;
@@ -161,18 +169,20 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
 }
 
 /* use css grid here for text areas? they r being weird */
 .new-session-note-input, .edit-session-note-input {
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     /* border: 1px solid black; */
     margin: 0 7%;
     padding: 1rem;
     background-color: white;
     border-radius: 1rem;
     font-size: 1.1rem;
+    resize: none;
 }
 
 .new-session-back-button-area {
