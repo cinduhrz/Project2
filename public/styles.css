@@ -388,7 +388,6 @@ footer {
     background-color: pink;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    /* padding: 3rem 2rem 2rem 2rem; */
     padding: 5rem 2rem;
 }
 
@@ -423,6 +422,7 @@ footer {
 .footer-nav-heading, .about-cindy-links-heading {
     text-transform: uppercase;
     font-weight: bold;
+    color: rgb(90, 90, 90);
 }
 
 .footer-nav a, .about-cindy a {
@@ -447,6 +447,10 @@ footer {
         -webkit-appearance: none;
         background-color: rgb(233, 233, 233);
         color: black;
+    }
+
+    main {
+        padding-bottom: 20rem;
     }
 
     .web-nav {
@@ -580,6 +584,41 @@ footer {
     .new-session-save-buttons-container {
         width: 100%;
         margin-bottom: 2rem;
+    }
+
+
+
+
+
+
+
+    
+    footer {
+        width: 100%;
+        /* do i needa change height? */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    .footer-theranotes-description .description {
+        margin-left: 1rem;
+        width: 70%;
+    }
+
+    .footer-big-title {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .footer-nav, .about-cindy {
+        margin-left: 1rem;
+    }
+
+    .about-cindy {
+        margin-top: 0.5rem;
+        padding-bottom: 3rem;
     }
 
 }
