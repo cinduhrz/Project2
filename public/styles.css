@@ -19,7 +19,7 @@ main {
     border-bottom: 0.15rem solid black;
 }
 
-.logo-a-tag{
+.logo-a-tag {
     text-decoration: none;
     color: black;
 }
@@ -47,7 +47,10 @@ main {
     /* border: 1px solid red; */
 }
 
-.menu-links-container a {
+.menu-links-container a, .menu-links-container input {
+    border: none;
+    background: transparent;
+    font-family: 'Nunito', sans-serif;
     color: black;
     text-decoration: none;
     font-size: 1.2rem;
@@ -59,8 +62,18 @@ main {
     color: black;
 }
 
-.menu-links-container a:hover {
+.menu-links-container a:hover, .menu-links-container input:hover {
     color: rgb(243, 140, 157);
+}
+
+.logout-button {
+    border: none;
+    background-color: transparent;
+}
+
+.logout-button:hover {
+    cursor: pointer;
+    /* color: rgb(243, 140, 157); */
 }
 
 textarea {
@@ -429,18 +442,24 @@ footer {
     color: rgb(90, 90, 90);
 }
 
-.footer-nav a, .about-cindy a {
+.footer-nav a, .about-cindy a, .footer-nav input {
     color: rgb(120, 120, 120);
     text-decoration: none;
     margin: 1% 1% 1% 0;
     transition: 0.2s;
+    font-size: 1rem;
+}
+
+#footer-nav-logout-button {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
 }
 
 .footer-nav a:visited , .about-cindy a:visited {
     color: rgb(120, 120, 120);
 }
 
-.footer-nav a:hover, .about-cindy a:hover {
+.footer-nav a:hover, .about-cindy a:hover, #footer-nav-logout-button:hover {
     color: rgb(90, 90, 90);
     text-decoration: none;
     margin: 1% 1% 1% 0;
@@ -484,6 +503,13 @@ footer {
         color: black;
         font-size: 1.1rem;
         margin: 0.2rem;
+    }
+
+    /* logout button in top nav for mobile, literally nothing changes when i style this except the font-weight... */
+    .logout-button {
+        -webkit-appearance: none;
+        font-weight: 500;
+        color: red;
     }
 
     .client-top-display-welcome-back-text {
@@ -650,6 +676,12 @@ footer {
 
     .footer-nav, .about-cindy {
         margin-left: 1rem;
+    }
+
+    #footer-nav-logout-button {
+        background: transparent;
+        color: rgb(120, 120, 120);
+        font-weight: 500;
     }
 
     .about-cindy {

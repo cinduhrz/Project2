@@ -64,6 +64,9 @@ router.post('/login', (req, res) => {
     })
 })
 
+// Logout route
+// router.delete()
+
 
 /////////////////////////////////////////////
 // Export Router
