@@ -65,7 +65,12 @@ router.post('/login', (req, res) => {
 })
 
 // Logout route
-// router.delete()
+router.delete('/logout', (req, res) => {
+    // destroy session and redirect to main page
+    req.session.destroy((err) => {
+        res.redirect('/')
+    })
+})
 
 
 /////////////////////////////////////////////

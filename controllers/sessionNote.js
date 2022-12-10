@@ -16,6 +16,14 @@ const router = express.Router()
 /////////////////////////////////////////////
 // Router Middleware
 /////////////////////////////////////////////
+// Authorization Middleware
+router.use((req, res, next) => {
+    if (req.session.loggedIn) {
+        next()
+    } else {
+        res.redirect('/login')
+    }
+})
 
 
 /////////////////////////////////////////////
@@ -33,9 +41,12 @@ router.get('/home', async (req, res) => {
     })
     console.log(shortenedDates)
 
+    const username = req.session.username
+
     res.render('client/index.ejs', {
         notes: notes,
-        dates: shortenedDates
+        dates: shortenedDates,
+        username: username
     })
 })
 
