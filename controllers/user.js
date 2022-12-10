@@ -15,6 +15,18 @@ const router = express.Router()
 /////////////////////////////////////////////
 // Routes
 /////////////////////////////////////////////
+// Home Route
+router.get('/', (req, res) => {
+    // logic for clicking the logo which has an href="/"
+    // if you're already logged in, logo leads to your user's homepage
+    // if not, it leads back to index page
+    if(req.session.loggedIn) {
+        res.redirect('/home')
+    } else {
+        res.render('index.ejs')
+    }
+})
+
 
 // the Signup routes (GET -> signup form, POST -> submit form and create new user)
 router.get('/signup', (req, res) => {

@@ -12,7 +12,11 @@
             </div>
             <div class="client-all-sessions-display">
                 <p class="all-sessions-subtitle">All Sessions</p>
-                
+
+                <% if (notes.length === 0) { %>
+                    No sessions yet.
+                <% } %>
+
                 <% for (let i=0; i<notes.length; i++) { %>
                     <div class="session-note-container">
 

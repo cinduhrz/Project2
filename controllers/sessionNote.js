@@ -32,7 +32,7 @@ router.use((req, res, next) => {
 
 // Index
 router.get('/home', async (req, res) => {
-    const notes = await SessionNote.find({})
+    const notes = await SessionNote.find({username: req.session.username})
     const sortedNotes = notes.sort((a, b) => b.date - a.date)
     console.log(sortedNotes)
 
@@ -90,7 +90,7 @@ router.post('/notes', (req, res) => {
     // res.send(req.body)
 
     // set username = to user making the note (do this after setting up auth)
-    // req.body.username = req.session.username
+    req.body.username = req.session.username
 
     SessionNote.create(req.body, (err, createdNote) => {
         console.log(createdNote)

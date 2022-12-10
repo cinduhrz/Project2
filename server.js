@@ -40,17 +40,6 @@ app.use(UserRouter)
 app.use(SessionNoteRouter)
 
 
-// Home Route
-app.get('/', (req, res) => {
-    // if(user.loggedIn) {
-    //     res.redirect('/home')
-    // } else {
-    //     res.render('index.ejs')
-    // }
-    res.render('index.ejs')
-})
-
-
 ///////////////////////////////////
 // Turn Server On
 ///////////////////////////////////
