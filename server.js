@@ -28,6 +28,12 @@ app.use(UserRouter)
 app.use(SessionNoteRouter)
 
 
+// Home Route
+app.get('/', (req, res) => {
+    res.render('index.ejs')
+})
+
+
 ///////////////////////////////////
 // Turn Server On
 ///////////////////////////////////

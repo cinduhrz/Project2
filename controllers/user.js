@@ -39,7 +39,29 @@ router.get('/login', (req, res) => {
 })
 
 router.post('/login', (req, res) => {
-    res.send('login')
+    // get data from req.body using destructuring
+    const { username, password } = req.body
+
+    // find user in database based on username
+    User.findOne({ username }, (err, user) => {
+        // check if user exists
+        if (!user) {
+            res.send("User doesn't exist")
+        } else {
+            // check if password matches
+            const passwordMatches = bcrypt.compareSync(password, user.password)
+            if (passwordMatches) {
+                // create new "username" key for req.session object and set value equal to username
+                req.session.username = username
+                // do same w loggedIn key
+                req.session.loggedIn = true
+                // redirect user to home page
+                res.redirect('/home')
+            } else {
+                res.send('Wrong password')
+            }
+        }
+    })
 })
 
 
