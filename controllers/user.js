@@ -21,8 +21,16 @@ router.get('/signup', (req, res) => {
     res.render('user/signup.ejs')
 })
 
-router.post('/signup', (req, res) => {
-    res.send('signup')
+router.post('/signup', async (req, res) => {
+    // encrypt newly created user password
+    // hash method takes 2 args: (og password, salt (randomly generated string to add to pw before hashing to make more secure))
+    req.body.password = await bcrypt.hash(req.body.password, await bcrypt.genSalt(10))
+
+    // create the new user
+    User.create(req.body, (err, user) => {
+        // redirect to login page
+        res.redirect('/login')
+    })
 })
 
 // the Login routes (GET -> login form, POST -> submit form and render new page -- always need post when submitting form!)

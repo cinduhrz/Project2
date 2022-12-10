@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs', { title: "theraNotes | Signup" }) %>
+
+    <body>
+        <%- include('../partials/signup-login-header.ejs') %>
+        
+        <main>
+            <div>
+                <form action="/login" method="POST">
+                    <fieldset>
+                        <legend>Login to theraNotes</legend>
+                        <label>
+                            username: <input type="text" name="username" required>
+                        </label>
+                        <label>
+                            password: <input type="password" name="password" required>
+                        </label>
+                        <input type="submit" value="Login">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <%- include('../partials/footer.ejs') %>
+    </body>
+
+</html>

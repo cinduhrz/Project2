@@ -23,10 +23,6 @@ const router = express.Router()
 /////////////////////////////////////////////
 
 // Index
-router.get('/', (req, res) => {
-    res.redirect('/home')
-})
-
 router.get('/home', async (req, res) => {
     const notes = await SessionNote.find({})
     const sortedNotes = notes.sort((a, b) => b.date - a.date)
