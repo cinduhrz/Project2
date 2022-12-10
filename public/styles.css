@@ -4,17 +4,13 @@ body {
     margin: 0;
     background-color: white;
     font-family: 'Nunito', sans-serif;
-}
-
-body {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
-body::after {
-    content: '';
-    display: block;
-    height: 10rem;
+main {
+    padding-bottom: 10rem;
 }
 
 .web-nav {
@@ -33,8 +29,7 @@ body::after {
 
 .big-title {
     padding: 0px;
-    margin: 1.2rem;
-    margin-left: 3rem;
+    margin: 1.5rem 0rem 1.2rem 2rem;
     font-size: 4rem;
     font-family: 'Comfortaa', cursive;
     
@@ -191,7 +186,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70%;
+    height: 100%;
 }
 
 .new-session-date-input, .edit-session-date-input {
@@ -211,7 +206,6 @@ button {
     border-radius: 1rem;
     padding-bottom: 2rem;
     margin: 2%;
-    /* border: 1px solid blue; */
 }
 
 .new-session-pre-session-area, .new-session-post-session-area, .edit-session-pre-session-area, .edit-session-post-session-area {
@@ -307,6 +301,13 @@ button {
     padding-bottom: 2rem;
 }
 
+.show-pre-session-notes-text, .show-post-session-notes-text {
+    box-sizing: border-box;
+    width: 85%;
+    height: 85%;
+    background: white;
+}
+
 .pre-session-notes-subtitle, .post-session-notes-subtitle {
     font-size: 1.5rem;
 }
@@ -381,11 +382,63 @@ button {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
     height: 10rem;
     background-color: pink;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.footer-theranotes-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-theranotes-description .description {
+    margin-left: 2rem;
+    width: 60%;
+}
+
+.footer-big-title {
+    padding: 0px;
+    margin: 0 0rem 0rem 2rem;
+    font-size: 4rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-cindy {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.footer-nav-heading, .about-cindy-links-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-nav a, .about-cindy a {
+    color: rgb(120, 120, 120);
+    text-decoration: none;
+    margin: 1% 1% 1% 0;
+    transition: 0.2s;
+}
+
+.footer-nav a:visited , .about-cindy a:visited {
+    color: rgb(120, 120, 120);
+}
+
+.footer-nav a:hover, .about-cindy a:hover {
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    margin: 1% 1% 1% 0;
 }
 
 @media only screen and (max-width: 500px) {

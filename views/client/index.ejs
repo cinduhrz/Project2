@@ -4,46 +4,47 @@
 
     <body>
         <%- include('../partials/header.ejs') %>
+        <main>
+            <div class="client-top-display">
+                <h4 class="client-top-display-welcome-back-text">Welcome back, user.</h4>
+                <p class="client-top-display-start-planning-text">Start planning for your next session below.</p>
+                <a href="/notes/new"><button class="client-top-display-big-button">Plan for Next Session</button></a>
+            </div>
+            <div class="client-all-sessions-display">
+                <p class="all-sessions-subtitle">All Sessions</p>
+                
+                <% for (let i=0; i<notes.length; i++) { %>
+                    <div class="session-note-container">
 
-        <div class="client-top-display">
-            <h4 class="client-top-display-welcome-back-text">Welcome back, user.</h4>
-            <p class="client-top-display-start-planning-text">Start planning for your next session below.</p>
-            <a href="/notes/new"><button class="client-top-display-big-button">Plan for Next Session</button></a>
-        </div>
-        <div class="client-all-sessions-display">
-            <p class="all-sessions-subtitle">All Sessions</p>
-            
-            <% for (let i=0; i<notes.length; i++) { %>
-                <div class="session-note-container">
+                        <div class="date-and-buttons-container">
+                            <p class="note-date"><%= dates[i] %></p>
 
-                    <div class="date-and-buttons-container">
-                        <p class="note-date"><%= dates[i] %></p>
+                            <div class="buttons-container">
+                                <a href="/notes/<%= notes[i]._id %>"><button class="show-button">open</button></a>
 
-                        <div class="buttons-container">
-                            <a href="/notes/<%= notes[i]._id %>"><button class="show-button">open</button></a>
+                                <a href="/notes/<%= notes[i]._id %>/edit"><button class="edit-button">edit</button></a>
 
-                            <a href="/notes/<%= notes[i]._id %>/edit"><button class="edit-button">edit</button></a>
+                                <form action="/notes/<%= notes[i]._id %>?_method=DELETE" method="POST">
+                                    <input class="delete-button" type="submit" value="delete">
+                                </form>
+                            </div>
 
-                            <form action="/notes/<%= notes[i]._id %>?_method=DELETE" method="POST">
-                                <input class="delete-button" type="submit" value="delete">
-                            </form>
+                        </div>
+                        <div class="pre-and-post-note-preview">
+                            <div class="pre-session-preview">
+                                <p class="pre-session-preview-heading">pre-session</p>
+                                <p class="preview-note"><%= notes[i].preSessionNote %></p>
+                            </div>
+                            <div class="post-session-preview">
+                                <p class="post-session-preview-heading">post-session</p>
+                                <p  class="preview-note"><%= notes[i].postSessionNote %></p>
+                            </div>
                         </div>
 
                     </div>
-                    <div class="pre-and-post-note-preview">
-                        <div class="pre-session-preview">
-                            <p class="pre-session-preview-heading">pre-session</p>
-                            <p class="preview-note"><%= notes[i].preSessionNote %></p>
-                        </div>
-                        <div class="post-session-preview">
-                            <p class="post-session-preview-heading">post-session</p>
-                            <p  class="preview-note"><%= notes[i].postSessionNote %></p>
-                        </div>
-                    </div>
-
-                </div>
-            <% } %>
-        </div>
+                <% } %>
+            </div>
+        </main>
         <%- include('../partials/footer') %>
     </body>
 </html>

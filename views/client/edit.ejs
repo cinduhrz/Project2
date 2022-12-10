@@ -4,48 +4,49 @@
 
     <body>
         <%- include('../partials/header.ejs') %>
-
-        <div class="edit-session-top-display">
-            <p class="edit-session-now-writing-text">Now writing for your session on <%= date %></p>
-            <p class="edit-session-sent-status-text">
-                <!-- include conditional: if has been sent, say "this session has been shared with your therapist <therapist name>. you're all set!" -->
-                <!-- if not, say "this session has not been shared with your therapist <therapist name>. <button that says "send to <therapist name>">" -->
-                This session has not been shared with your therapist.
-                    <button class="send-to-therapist-button">
-                        Send to Therapist
-                    </button>
-            </p>
-        </div>
-
-
-        <form class="edit-session-form" action="/notes/<%= note._id %>?_method=PUT" method="POST">
-            <div class="edit-session-date-input">
-                <!-- ? how do i prepopulate this date picker with note.date? injecting note.date into value attribute doesn't work... -->
-                Change Session Date? (optional) : <input type="date" name="date" min="2022-01-01" max="2050-01-01">
+        <main>
+            <div class="edit-session-top-display">
+                <p class="edit-session-now-writing-text">Now writing for your session on <%= date %></p>
+                <p class="edit-session-sent-status-text">
+                    <!-- include conditional: if has been sent, say "this session has been shared with your therapist <therapist name>. you're all set!" -->
+                    <!-- if not, say "this session has not been shared with your therapist <therapist name>. <button that says "send to <therapist name>">" -->
+                    This session has not been shared with your therapist.
+                        <button class="send-to-therapist-button">
+                            Send to Therapist
+                        </button>
+                </p>
             </div>
 
-            <div class="edit-session-pre-and-post-notes-container">
-                <div class="edit-session-pre-session-area">
-                    <p class="pre-session-notes-subtitle">pre-session notes</p>
-                    <textarea class="edit-session-note-input"name="preSessionNote"><%= note.preSessionNote %></textarea>
+
+            <form class="edit-session-form" action="/notes/<%= note._id %>?_method=PUT" method="POST">
+                <div class="edit-session-date-input">
+                    <!-- ? how do i prepopulate this date picker with note.date? injecting note.date into value attribute doesn't work... -->
+                    Change Session Date? (optional) : <input type="date" name="date" min="2022-01-01" max="2050-01-01">
                 </div>
-                <div class="edit-session-post-session-area">
-                    <p class="post-session-notes-subtitle">post-session notes</p>
-                    <textarea class="edit-session-note-input" name="postSessionNote"><%= note.postSessionNote %></textarea>
+
+                <div class="edit-session-pre-and-post-notes-container">
+                    <div class="edit-session-pre-session-area">
+                        <p class="pre-session-notes-subtitle">pre-session notes</p>
+                        <textarea class="edit-session-note-input"name="preSessionNote"><%= note.preSessionNote %></textarea>
+                    </div>
+                    <div class="edit-session-post-session-area">
+                        <p class="post-session-notes-subtitle">post-session notes</p>
+                        <textarea class="edit-session-note-input" name="postSessionNote"><%= note.postSessionNote %></textarea>
+                    </div>
                 </div>
+
+                <!-- Save & Send to Therapist button... how to implement? -->
+                <div class="edit-session-save-buttons-container">
+                    <!-- Save button aka Update Route!!! -->
+                    <input class="edit-page-save-changes-button" type="submit" value="Save Changes">
+                </div>
+
+            </form>
+
+            <div class="back-button-area">
+                <a href="/notes/<%= note._id %>"><button class="new-page-button">Cancel</button></a>
             </div>
-
-            <!-- Save & Send to Therapist button... how to implement? -->
-            <div class="edit-session-save-buttons-container">
-                <!-- Save button aka Update Route!!! -->
-                <input class="edit-page-save-changes-button" type="submit" value="Save Changes">
-            </div>
-
-        </form>
-
-        <div class="back-button-area">
-            <a href="/notes/<%= note._id %>"><button class="new-page-button">Cancel</button></a>
-        </div>
+        </main>
         <%- include('../partials/footer') %>
     </body>
 </html>
