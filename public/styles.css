@@ -149,9 +149,6 @@ button {
 
 .pre-and-post-note-preview {
     display: flex;
-    /* not sure what justify-content is doing here,
-    i'm just tryna keep each preview on its half */
-    /* justify-content: space-between;  */
     padding: 0 1rem 1rem 1rem;
 }
 
