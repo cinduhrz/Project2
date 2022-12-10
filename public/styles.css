@@ -87,14 +87,14 @@ textarea {
     padding: 1rem 2rem;
     border-radius: 1rem;
     color: white;
-    background-color: rgb(241, 180, 190);
+    background-color: rgb(243, 140, 157);
     border: none;
     transition: 0.2s;
 }
 
 .client-top-display-big-button:hover {
     color: white;
-    background-color: rgb(224, 147, 160);
+    background-color: rgb(241, 180, 190);
 }
 
 .client-all-sessions-display {
@@ -388,7 +388,8 @@ footer {
     background-color: pink;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    padding: 3rem 2rem 2rem 2rem;
+    /* padding: 3rem 2rem 2rem 2rem; */
+    padding: 5rem 2rem;
 }
 
 .footer-theranotes-description {
