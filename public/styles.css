@@ -162,6 +162,9 @@ button {
     padding: 1rem;
     padding-bottom: 0;
     margin: 0 0.5rem 0.5rem 0.5rem;
+    max-height: 7rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .pre-session-preview {
@@ -450,7 +453,7 @@ footer {
     }
 
     main {
-        padding-bottom: 20rem;
+        padding-bottom: 100%;
     }
 
     .web-nav {
@@ -586,13 +589,45 @@ footer {
         margin-bottom: 2rem;
     }
 
-
-
-
-
-
-
+    .show-session-your-session-on-text {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     
+    .show-session-notes-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .show-pre-session-notes-container, .show-post-session-notes-container {
+        /* border: 1px solid black; */
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+
+    .edit-session-now-writing-text {
+        font-size: 1.5rem;
+        margin: 1rem 2rem 0 2rem;
+        text-align: center;
+    }
+
+    .edit-session-sent-status-text {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 1.5rem 2rem 0 2rem;
+    }
+
+    .edit-session-date-input {
+        margin-right: 1.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
     footer {
         width: 100%;
         /* do i needa change height? */
