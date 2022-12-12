@@ -67,6 +67,9 @@ router.post('/login', (req, res) => {
                 req.session.username = username
                 // do same w loggedIn key
                 req.session.loggedIn = true
+                // do same with firstName so we can use it in sessionNote controller
+                req.session.firstName = user.firstName
+
                 // redirect user to home page
                 res.redirect('/home')
             } else {

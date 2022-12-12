@@ -41,12 +41,12 @@ router.get('/home', async (req, res) => {
     })
     console.log(shortenedDates)
 
-    const username = req.session.username
+    const firstName = req.session.firstName
 
     res.render('client/index.ejs', {
         notes: notes,
         dates: shortenedDates,
-        username: username
+        firstName: firstName
     })
 })
 
