@@ -895,4 +895,42 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .login-signup-form-container {
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+    #signup-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signup-login-form-description {
+        font-size: 1.05rem;
+    }
+
+    #signup-form input, #login-form input {
+        margin: 0.5rem 0;
+    }
+
+    .first-name input {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    .last-name input {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .password input {
+        margin-bottom: 1.5rem !important;
+    }
+
+    #signup-main {
+        margin-top: 0;
+        padding-bottom: 3rem;
+    }
+
 }
