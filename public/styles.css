@@ -900,6 +900,10 @@ footer {
         width: 80%;
     }
 
+    .login-signup-form-container a {
+        color: rgb(85, 85, 85)
+    }
+
     #signup-form {
         display: flex;
         flex-direction: column;
@@ -930,6 +934,23 @@ footer {
 
     #signup-main {
         margin-top: 0;
+        padding-bottom: 3rem;
+    }
+
+    #login-form {
+        padding-bottom: 1rem;
+    }
+
+    #login-form .username input {
+        margin-top: 0 !important;
+    }
+
+    .mobile-login-form-move-up {
+        position: relative !important;
+        bottom: 1rem !important;
+    }
+
+    #login-main {
         padding-bottom: 3rem;
     }
 
