@@ -5,18 +5,22 @@
     <body>
         <%- include('../partials/signup-login-header.ejs') %>
         
-        <main>
-            <div>
+        <main class="login-signup-form-main">
+            <div class="login-signup-form-container">
                 <form action="/login" method="POST">
-                    <fieldset>
-                        <legend>Login to theraNotes</legend>
+                    <fieldset id="login-form">
+                        <legend class="signup-login-legend">Login<span class="signup-login-form-description">Welcome back! Please log in to your theraNotes account to continue.</span></legend>
                         <label>
-                            username: <input type="text" name="username" required>
+                            <input type="text" name="username" placeholder="username" required>
                         </label>
                         <label>
-                            password: <input type="password" name="password" required>
+                            <input type="password" name="password" placeholder="password" required>
                         </label>
-                        <input type="submit" value="Login">
+
+                        <input class="signup-login-button" type="submit" value="Login">
+
+                        <a href="/signup" class="signup-login-switch-text" >Don't have an account? <span>Sign up.</span></a>
+
                     </fieldset>
                 </form>
             </div>
