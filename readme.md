@@ -1,6 +1,10 @@
 # Project 2
 
-theraNotes is a platform for those in therapy to keep track of their notes for each session and to share those notes with their therapists. Each session consists of a pre-session note and a post-session note, both of which can be shared with the user's therapist. Therapists can also keep track of each client's progress via their notes over time.
+theraNotes is a platform for those in therapy to keep track of their notes for each session and view their progress over time. Each session consists of a pre-session note and a post-session note. 
+
+A major future stretch goal is for users to be able to share to share those notes with their therapists' accounts. Therapists can also keep track of multiple clients' notes and track each client's progress via their notes over time.
+
+Vanilla CSS was used in order to strengthen CSS foundations.
 
 ### Link to Planning Trello Board
 [Trello Board](https://trello.com/invite/b/taFMH5oe/ATTI1e994c49c1b88f52a3e1a93a561592e5DC05E651/projcet-2)
@@ -10,7 +14,6 @@ theraNotes is a platform for those in therapy to keep track of their notes for e
 - HTML
 - CSS
 - Javascript
-- jQuery
 - MongoDB
 - Express
 - Node
@@ -64,7 +67,13 @@ theraNotes is a platform for those in therapy to keep track of their notes for e
 
 
 ### Link to Project
-[My Project Live Page](Link)
+[My Project Live Page](https://project2-6lhz.onrender.com/)
 
 
 ### Future Goals
+
+- Create therapist model and account
+- Users can connect account to therapist's account
+- Users can share notes with therapists
+- Therapists can view client's notes
+- Therapists can comment on client's notes
