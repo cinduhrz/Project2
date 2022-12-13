@@ -79,7 +79,7 @@ router.post('/login', (req, res) => {
                 // redirect user to home page
                 res.redirect('/home')
             } else {
-                res.send('Wrong password')
+                res.render('user/error-pages/wrong-password.ejs')
             }
         }
     })
