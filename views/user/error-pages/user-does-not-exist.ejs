@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../../partials/head.ejs', { title: "theraNotes | Signup" }) %>
+
+    <body>
+        <%- include('../../partials/signup-login-header.ejs') %>
+        
+        <main class="login-signup-form-main" id="login-main">
+            <div class="login-signup-form-container">
+                <form action="/login" method="POST">
+                    <fieldset id="login-form">
+                        <legend class="signup-login-legend">Login<span class="signup-login-form-description">Welcome back! Please log in to your theraNotes account to continue.
+
+                            <p style=" color:red; margin-bottom: 0">Username doesn't exist. Please try again.</p>
+
+                        </span></legend>
+                        <div class="mobile-login-form-move-up">
+                            <label class="username">
+                                <input type="text" name="username" placeholder="username" required>
+                            </label>
+                            <label class="password">
+                                <input type="password" name="password" placeholder="password" required>
+                            </label>
+
+                            <input class="signup-login-button" type="submit" value="Login">
+
+                            <div id="login-switch-text-container">
+                                <a href="/signup" class="signup-login-switch-text" >Don't have an account? <span>Sign up.</span></a>
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <%- include('../../partials/footer.ejs') %>
+    </body>
+
+</html>
