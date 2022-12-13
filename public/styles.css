@@ -35,7 +35,7 @@ main {
 
 .big-title {
     padding: 0px;
-    margin: 1.5rem 0rem 1.2rem 2rem;
+    margin: 1.5rem 0rem 1.2rem 4rem;
     font-size: 4rem;
     font-family: 'Comfortaa', cursive;
 }
@@ -634,7 +634,7 @@ footer {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     button, input[type="submit"] {
         -webkit-appearance: none;
         background-color: rgb(233, 233, 233);

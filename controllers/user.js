@@ -5,7 +5,6 @@ const express = require('express') // need for express.Router()
 const User = require('../models/user.js') // imports user model for routes AND connects to db
 const bcrypt = require('bcryptjs') // to encrypt user passwords
 
-
 /////////////////////////////////////////////
 // Create Router
 /////////////////////////////////////////////
@@ -38,11 +37,18 @@ router.post('/signup', async (req, res) => {
     // hash method takes 2 args: (og password, salt (randomly generated string to add to pw before hashing to make more secure))
     req.body.password = await bcrypt.hash(req.body.password, await bcrypt.genSalt(10))
 
-    // create the new user
-    User.create(req.body, (err, user) => {
+    // check if username is already taken
+    const username = req.body.username
+    const userExists = await User.findOne({ username })
+    if (userExists) {
+        res.render('user/error-pages/username-taken.ejs')
+    } else {
+        // create the new user
+        User.create(req.body, (err, user) => {
         // redirect to login page
         res.redirect('/login')
     })
+    }
 })
 
 // the Login routes (GET -> login form, POST -> submit form and render new page -- always need post when submitting form!)

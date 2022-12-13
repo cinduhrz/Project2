@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../../partials/head.ejs', { title: "theraNotes | Signup" }) %>
+
+    <body>
+        <%- include('../../partials/signup-login-header.ejs') %>
+        
+        <main class="login-signup-form-main" id="signup-main">
+            <div class="login-signup-form-container">
+                <form action="/signup" method="POST">
+                    <fieldset id="signup-form">
+                        <legend class="signup-login-legend">Signup <span class="signup-login-form-description">
+                            Welcome to theraNotes! Get started by filling out the information below.
+
+                            <p style=" color:red; margin-bottom: 0">Username taken. Please choose another one.</p>
+
+                        </span></legend>
+                            <label class="first-name">
+                                <input type="text" name="firstName" placeholder="first name" required>
+                            </label>
+                            <label class="last-name">
+                                <input type="text" name="lastName" placeholder="last name"  required>
+                            </label>
+                            <label class="username">
+                                <input type="text" name="username" placeholder="username"  required>
+                            </label>
+                            <label class="password">
+                                <input type="password" name="password"  placeholder="password" required>
+                            </label>
+
+                            <input class="signup-login-button" type="submit" value="Create Account">
+
+                            <div id="signup-switch-text-container">
+
+                                <a href="/login" class="signup-login-switch-text">Already have an account? <span>Log in.</span></a>
+
+                            </div>
+
+                            
+
+
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <%- include('../../partials/footer.ejs') %>
+    </body>
+
+</html>
