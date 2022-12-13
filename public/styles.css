@@ -596,6 +596,7 @@ footer {
 
 .signup-login-switch-text {
     text-decoration: none;
+    color: rgb(85, 85, 85);
 }
 
 .signup-login-switch-text span {
