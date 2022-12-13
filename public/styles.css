@@ -534,8 +534,10 @@ footer {
 }
 
 #login-form {
-    display: flex;
-    flex-direction: column;
+    /* uhh i guess i don't need the below lines cuz they don't affect anything */
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
     padding: 2rem;
     border: none;
 }
@@ -594,8 +596,6 @@ footer {
 
 .signup-login-switch-text {
     text-decoration: none;
-    text-align: center;
-    justify-self: center;
 }
 
 .signup-login-switch-text span {
@@ -603,11 +603,16 @@ footer {
 }
 
 .signup-login-switch-text:visited {
-    color: rgb(85, 85, 85)
+    color: rgb(85, 85, 85);
 }
 
 #signup-switch-text-container {
     width: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+#login-switch-text-container {
     display: flex;
     justify-content: center;
 }
