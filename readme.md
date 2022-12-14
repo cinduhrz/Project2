@@ -1,4 +1,4 @@
-# Project 2
+# theraNotes (Project 2)
 
 theraNotes is a platform for those in therapy to keep track of their notes for each session and view their progress over time. Each session consists of a pre-session note and a post-session note. 
 
@@ -19,6 +19,10 @@ Vanilla CSS was used in order to strengthen CSS foundations.
 - Node
 - VS Code
 - Render
+
+### Finished App Screenshots
+![description](link)
+
 
 ### Wireframes
 
@@ -53,7 +57,7 @@ Vanilla CSS was used in order to strengthen CSS foundations.
 ![ERD Diagram showing relationship between session notes, user, and therapist models](https://i.imgur.com/r9e57M6.png)
 
 
-### Daily Plan
+<!-- ### Daily Plan
 
 | Day | Goal |
 |-----|------|
@@ -63,11 +67,11 @@ Vanilla CSS was used in order to strengthen CSS foundations.
 |  4 (Fri)  | <ul><li>Figure out how to share authorization between user and therapist model</li><li>Style therapist pages (web and mobile)</li></ul> |
 |  5 (Sat)  | <ul><li>Create nav for web and mobile</li><li>Create logo for theraNotes</li></ul> |
 |  6 (Sun)  | <ul><li>Continue styling</li><li>Add github details?</li></ul> |
-|  7 (Mon)  | <ul><li>Finishing touches</li></ul> |
+|  7 (Mon)  | <ul><li>Finishing touches</li></ul> | -->
 
 
 ### Link to Project
-[My Project Live Page](https://project2-6lhz.onrender.com/)
+[theraNotes Live Site](https://project2-6lhz.onrender.com/)
 
 
 ### Future Goals
@@ -77,3 +81,5 @@ Vanilla CSS was used in order to strengthen CSS foundations.
 - Users can share notes with therapists
 - Therapists can view client's notes
 - Therapists can comment on client's notes
+- Modals for delete confirmation
+- a how to use/how it works on the home page with steps
