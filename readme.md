@@ -1,5 +1,7 @@
 # theraNotes (Project 2)
 
+[theraNotes Live Site](https://project2-6lhz.onrender.com/)
+
 theraNotes is a platform for those in therapy to keep track of their notes for each session and view their progress over time. Each session consists of a pre-session note and a post-session note. 
 
 A major future stretch goal is for users to be able to share to share those notes with their therapists' accounts. Therapists can also keep track of multiple clients' notes and track each client's progress via their notes over time.
