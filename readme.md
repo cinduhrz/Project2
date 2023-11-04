@@ -1,4 +1,4 @@
-# theraNotes (Project 2)
+# theraNotes
 
 [theraNotes Live Site](https://project2-6lhz.onrender.com/)
 
@@ -23,7 +23,18 @@ Vanilla CSS was used in order to strengthen CSS foundations.
 - Render
 
 ### Finished App Screenshots
-![description](link)
+![desktop home/homepage screen for user](https://i.imgur.com/Szrw7Vi.png)
+![desktop home/signup screen for user](https://i.imgur.com/jiUbFcJ.png)
+![desktop home/index route screen for user](https://i.imgur.com/IwRVsNF.png)
+![desktop home/create session screen for user](https://i.imgur.com/N01yEJq.png)
+![desktop home/view session screen for user](https://i.imgur.com/tNDG7om.png)
+
+
+![mobile home/homepage screen for user](https://i.imgur.com/k7ylkVR.png)
+![mobile home/signup screen for user](https://i.imgur.com/h5XGXJt.png)
+![mobile home/index route screen for user](https://i.imgur.com/aR2IK1H.png)
+![mobile home/create session screen for user](https://i.imgur.com/zKhW5yh.png)
+![mobile home/view session screen for user](https://i.imgur.com/nZvesWH.png)
 
 
 ### Wireframes
